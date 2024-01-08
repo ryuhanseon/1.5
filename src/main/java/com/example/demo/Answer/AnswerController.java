@@ -21,7 +21,7 @@ public class AnswerController {
     private final QuestionService questionService;
     private final AnswerService answerService;
 
-    @PostMapping("/detail/{id}")
+    @PostMapping("/create/{id}")
     public String answerDetail(Model model, @PathVariable("id") Integer id,
     @Valid AnswerForm answerform, BindingResult bindingResult){
         Question question = this.questionService.getQuestion(id);
