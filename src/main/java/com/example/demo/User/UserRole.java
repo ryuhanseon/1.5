@@ -1,18 +1,18 @@
-package user;
-
-
+package com.example.demo.User;
 
 import lombok.Getter;
-
 
 @Getter
 public enum UserRole {
     ADMIN("ROLE_ADMIN"),
-    USER("ROLE_USER");
+        ROLE("ROLE_USER");
 
-    UserRole(String value) {
-        this.value = value;
+    UserRole(String value){
+        this.value=value;
     }
 
+
     private String value;
+
+
 }
